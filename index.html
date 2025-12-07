@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism & Hotel Management Portfolio</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1a1412;
+            color: #fff;
+        }
+        header {
+            background-color: #1a1412;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+        header h1 {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            color: #e98a2f;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-attachment: fixed;
+            transform: translateZ(0);
+            background: url('Hungrybuzz - Restaurant WordPress Theme.jfif') center/cover no-repeat;
+            height: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h2 {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1.2s ease-out;
+            font-size: 48px;
+            font-family: 'Brush Script MT', cursive;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 30px;
+            border-radius: 8px;
+        }
+        section {
+            padding: 60px 80px;
+        }
+        h3 {
+            color: #e98a2f;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .student-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+        .student-card {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            background-color: #241d1b;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 40px;
+        }
+        .student-card img {
+            width: 240px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .student-info h4 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .student-info p {
+            line-height: 1.7;
+        }
+        a.button:hover {
+            background-color: #ff9d42;
+            transform: scale(1.05);
+        }
+        a.button {
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #e98a2f;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #000;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f0b0a;
+            color: #aaa;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('show');
+                });
+            }, { threshold: 0.2 });
+
+            document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Tourism & Hotel Management Portfolio</h1>
+        <nav>
+            <a href="#rofida">Rofida</a>
+            <a href="#nour">Nour</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Hospitality • Professional • Creative</h2>
+    </div>
+
+    <section class="fade" id="rofida">
+        <h3>Rofida Mohamed Ahmed El-Henawy</h3>
+        <div class="student-card">
+            <img src="" alt="Profile Photo Placeholder" />
+            <div class="student-info">
+                <h4>Age: 21</h4>
+                <p><strong>Faculty:</strong> Tourism & Hotel Management – Helwan University (2022–2026)</p>
+                <p><strong>Experience:</strong></p>
+                <ul>
+                    <li>Kitchen section (Garde Manger) internship – Dusit Thani Hotel</li>
+                    <li>Front Office (Telephone Operator Agent) internship – Kempinski Nile Hotel</li>
+                </ul>
+                <p><strong>Contact:</strong></p>
+                <p>📞 +201011792787<br>
+                   📧 rofidaelhenawy94@gmail.com</p>
+                <a class="button" href="https://www.linkedin.com/in/rofida-el-henawy-a93b55223?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade" id="nour">
+        <h3>Nour Eldeen Haytham Badr Lama</h3>
+        <div class="student-card">
+            <img src="" alt="Profile Photo Placeholder" />
+            <div class="student-info">
+                <h4>Age: 22</h4>
+                <p><strong>Faculty:</strong> Tourism & Hotel Management – Helwan University (2022–2026)</p>
+                <p><strong>Experience:</strong></p>
+                <ul>
+                    <li>Chef Internship – Dusit Thani Hotel (May 2023 – June 2024)</li>
+                    <li>Barista & Waiter Internship – Dusit Thani Hotel (July 2024 – September 2024)</li>
+                </ul>
+                <p><strong>Contact:</strong></p>
+                <p>📞 01020823909<br>
+                   📧 Nourhisam972@gmail.com</p>
+                <a class="button" href="https://www.linkedin.com/in/nour-hisam-568741393?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        © 2026 Portfolio – Helwan University Students
+    </footer>
+<script>
+        window.addEventListener('scroll', () => {
+            const heroText = document.querySelector('.hero h2');
+            heroText.style.opacity = 1;
+            heroText.style.transform = 'translateY(0)';
+        });
+    </script>
+</body>
+</html>
